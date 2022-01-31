@@ -16,7 +16,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
-const mnemonic = "minor crime enemy merge ivory shuffle cross oak body scatter forest almost";
+const mnemonic = ""; // add your own test mnemonic
 module.exports = {
   solidity: "0.8.4",
   networks: {

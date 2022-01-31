@@ -29,7 +29,8 @@ describe("LiquidityGeneratorToken Contract", function () {
       await liquidityToken.deployed();
 
       const routerPairAddress = await liquidityToken.uniswapV2Pair();
-      await liquidityToken.includeInFee(routerPairAddress); // fee apply on the dex
+     const tx = await liquidityToken.includeInFee(routerPairAddress); // fee apply on the dex
+     tx.wait();
     });
 
     
